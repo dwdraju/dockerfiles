@@ -42,7 +42,7 @@ ADD conf/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # Install npm,yarn
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 ENV NVM_DIR /usr/local/nvm
-ENV NODE_VERSION 8.9.4
+ENV NODE_VERSION 9.11.1
 
 # install nvm
 # https://github.com/creationix/nvm#install-script
