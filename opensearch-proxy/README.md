@@ -3,7 +3,7 @@
 This works for Amazon OpenSearch Service
 
 ## Docker Image
-`dwdraju/dockerfiles:opensearch-proxy`
+`dwdraju/dockerfiles:opensearchproxy`
 
 ## Build your own Image
 docker build -t opensearchproxy .
