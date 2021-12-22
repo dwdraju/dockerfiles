@@ -3,14 +3,14 @@
 This works for Amazon OpenSearch Service
 
 ## Docker Image
-`dwdraju/dockerfiles:opensearch-proxy`
+`dwdraju/dockerfiles:opensearchproxy-no-auth`
 
 ## Build your own Image
 docker build -t opensearchproxy .
 
 ## Run the Proxy
 ```
-docker run -p 8080:80 -e OPENSEARCH_URL=[opensearch-url] opensearchproxy:latest
+docker run -p 8080:80 -e OPENSEARCH_URL=[opensearch-url] opensearchproxy-no-auth:latest
 ```
 
 Browse with url: http://localhost:8080
