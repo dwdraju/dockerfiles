@@ -10,7 +10,7 @@ docker build -t opensearchproxy .
 
 ## Run the Proxy
 ```
-docker run -p 8080:80 -e OPENSEARCH_URL=[opensearch-url] opensearchproxy-no-auth:latest
+docker run -p 8080:80 -e OPENSEARCH_URL=$OPENSEARCH_URL opensearchproxy-no-auth:latest
 ```
 
 Browse with url: http://localhost:8080

@@ -17,7 +17,7 @@ htpasswd -c auth opensearchuser
 
 ## Run the Proxy
 ```
-docker run -p 8080:80 -e OPENSEARCH_URL=[opensearch-url] -e HTPASSWD_USER=opensearchuser -e HTPASSWD_PASSWORD='opensearchpassword' opensearchproxy:latest
+docker run -p 8080:80 -e OPENSEARCH_URL=$OPENSEARCH_URL -e HTPASSWD_USER=$HTPASSWD_USER -e HTPASSWD_PASSWORD=$HTPASSWD_PASSWORD opensearchproxy:latest
 ```
 
 Browse with url: http://localhost:8080
